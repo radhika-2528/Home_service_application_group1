@@ -1,0 +1,25 @@
+IDIR=../include
+CC=gcc
+BDIR=../bin
+ODIR=../obj
+SDIR=../SRC
+OFILES= $(ODIR)/home_service_app_main.o $(ODIR)/home_service_app_menu.o $(ODIR)/home_service_app_func1.o $(ODIR)/home_service_app_func2.o
+
+serviceapp: $(OFILES)
+	$(CC) -o $(BDIR)/serviceapp $(OFILES)
+
+$(ODIR)/home_service_app_main.o: $(SDIR)/home_service_app_main.c $(IDIR)/*
+	$(CC) -o $(ODIR)/home_service_app_main.o -c $(SDIR)/home_service_app_main.c 
+
+$(ODIR)/home_service_app_menu.o: $(SDIR)/home_service_app_menu.c $(IDIR)/*
+	$(CC) -o $(ODIR)/home_service_app_menu.o -c $(SDIR)/home_service_app_menu.c
+
+$(ODIR)/home_service_app_func1.o: $(SDIR)/home_service_app_func1.c $(IDIR)/*
+	$(CC) -o $(ODIR)/home_service_app_func1.o -c $(SDIR)home_service_app_func1.c
+
+$(ODIR)/home_service_app_func2.o: $(SDIR)/home_service_app_func2.c $(IDIR)/*
+	$(CC) -o $(ODIR)/home_service_app_func2.o -c $(SDIR) home_service_app_func2.c
+clean:
+	rm $(ODIR)/*
+
+

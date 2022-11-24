@@ -1,0 +1,24 @@
+home_service_app_main.c: (in function main)
+home_service_app_main.c:23:2: Return value (type int) ignored:
+                                 customer_file_to...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+home_service_app_main.c:24:2: Return value (type int) ignored:
+                                 technician_file_...
+home_service_app_main.c:25:2: Return value (type int) ignored:
+                                 service_file_to_...
+home_service_app_main.c:32:3: Return value (type int) ignored: system("clear")
+home_service_app_main.c:35:3: Return value (type int) ignored:
+                                 scanf("%d", &choice)
+home_service_app_main.c:38:11: Return value (type int) ignored:
+                                  customer_corner()
+home_service_app_main.c:40:11: Return value (type int) ignored:
+                                  technician_corner()
+home_service_app_main.c:42:11: Return value (type int) ignored: admin()
+home_service_app_main.c:49:2: Return value (type int) ignored:
+                                 customer_list_to...
+home_service_app_main.c:50:2: Return value (type int) ignored:
+                                 technician_list_...
+home_service_app_main.c:51:2: Return value (type int) ignored:
+                                 service_list_to_...
+

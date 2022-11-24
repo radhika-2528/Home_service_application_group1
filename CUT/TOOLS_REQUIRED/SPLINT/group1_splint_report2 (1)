@@ -1,0 +1,72 @@
+home_service_app_menu.c: (in function customer_corner)
+home_service_app_menu.c:26:8: Variable choice used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+home_service_app_menu.c:28:3: Return value (type int) ignored: system("read a")
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+home_service_app_menu.c:29:3: Return value (type int) ignored: system("clear")
+home_service_app_menu.c:32:3: Return value (type int) ignored:
+                                 scanf("%d", &choice)
+home_service_app_menu.c:35:11: Return value (type int) ignored:
+                                  add_cust_details()
+home_service_app_menu.c:37:11: Return value (type int) ignored:
+                                  edit_cust_details()
+home_service_app_menu.c:39:11: Return value (type int) ignored:
+                                  view_cust_details()
+home_service_app_menu.c:41:11: Return value (type int) ignored:
+                                  del_cust_details()
+home_service_app_menu.c: (in function technician_corner)
+home_service_app_menu.c:71:8: Variable choice used before definition
+home_service_app_menu.c:73:3: Return value (type int) ignored: system("read a")
+home_service_app_menu.c:74:3: Return value (type int) ignored: system("clear")
+home_service_app_menu.c:77:3: Return value (type int) ignored:
+                                 scanf("%d", &choice)
+home_service_app_menu.c:80:11: Return value (type int) ignored:
+                                  add_tech_details()
+home_service_app_menu.c:82:11: Return value (type int) ignored:
+                                  edit_tech_details()
+home_service_app_menu.c:84:11: Return value (type int) ignored:
+                                  view_tech_details()
+home_service_app_menu.c:86:11: Return value (type int) ignored:
+                                  del_tech_details()
+home_service_app_menu.c: (in function admin)
+home_service_app_menu.c:100:8: Test expression for while not boolean, type int:
+                                  1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+home_service_app_menu.c:104:3: Return value (type int) ignored:
+                                  system("read a")
+home_service_app_menu.c:105:3: Return value (type int) ignored: system("clear")
+home_service_app_menu.c:107:3: Return value (type int) ignored:
+                                  scanf("%s", admi...
+home_service_app_menu.c:109:3: Return value (type int) ignored:
+                                  scanf("%s", pswd)
+home_service_app_menu.c:113:4: Return value (type int) ignored: system("clear")
+home_service_app_menu.c:119:5: Return value (type int) ignored:
+                                  scanf("%d", &ch1)
+home_service_app_menu.c:122:14: Return value (type int) ignored:
+                                   customer_corner()
+home_service_app_menu.c:124:14: Return value (type int) ignored:
+                                   technician_corner()
+home_service_app_menu.c:126:14: Return value (type int) ignored:
+                                   service_corner()
+home_service_app_menu.c:142:2: Path with no return in function declared to
+                                  return int
+  There is a path through a function declared to return a value on which there
+  is no return statement. This means the execution may fall through without
+  returning a meaningful result to the caller. (Use -noret to inhibit warning)
+home_service_app_menu.c: (in function service_corner)
+home_service_app_menu.c:164:8: Variable choice used before definition
+home_service_app_menu.c:166:3: Return value (type int) ignored:
+                                  system("read a")
+home_service_app_menu.c:167:3: Return value (type int) ignored: system("clear")
+home_service_app_menu.c:170:3: Return value (type int) ignored:
+                                  scanf("%d", &choice)
+home_service_app_menu.c:173:11: Return value (type int) ignored: edit_records()
+home_service_app_menu.c:175:11: Return value (type int) ignored: view_records()
+home_service_app_menu.c:177:11: Return value (type int) ignored: del_records()
+home_service_app_menu.c:180:11: Unreachable code: break
+  This code will never be reached on any possible execution. (Use -unreachable
+  to inhibit warning)
+
